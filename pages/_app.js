@@ -1,6 +1,7 @@
-import { Carousel } from 'flowbite-react';
+
 import 'tailwindcss/tailwind.css'
-import CarouselPage from '../components/CarouselPage';
+import NavBar from '../components/NavBar';
+import Dashboard from './Dashboard';
 
 
 
@@ -13,10 +14,9 @@ function MyApp({ Component, pageProps }) {
     <div className="">
 
 
-
-      <CarouselPage/>
+      <NavBar />
       <Component {...pageProps} />
-     
+
     </div>
   );
 
