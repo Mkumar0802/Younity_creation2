@@ -1,6 +1,6 @@
 
 import 'tailwindcss/tailwind.css'
-import NavBar from '../components/NavBar';
+
 
 
 
@@ -14,7 +14,7 @@ function MyApp({ Component, pageProps }) {
     <div className="">
 
 
-      <NavBar />
+   
       <Component {...pageProps} />
 
     </div>
