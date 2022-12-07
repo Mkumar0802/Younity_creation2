@@ -8,6 +8,20 @@ module.exports = {
   ],
   darkMode: false, 
   theme: {
+    'brandy-rose': {
+      '50': '#fbf9f9', 
+      '100': '#f8f3f3', 
+      '200': '#ece0e0', 
+      '300': '#e1cece', 
+      '400': '#cba9a9', 
+      '500': '#b48484', 
+      '600': '#a27777', 
+      '700': '#876363', 
+      '800': '#6c4f4f', 
+      '900': '#584141'
+  },
+
+
     screens: {
       ss: "320px",
       // => @media (min-width: 640px) { ... }
