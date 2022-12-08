@@ -1,12 +1,19 @@
 import React, { useEffect } from 'react'
-
 import 'tailwindcss/tailwind.css'
 import 'bootstrap/dist/css/bootstrap.css'; // Add this line
 import '../styles/globals.css';
-import NavBar from '../components/NavBar';
+import { Inter } from '@next/font/google'
+
+const inter = Inter({
+  subsets: ['latin'],
+  variable: '--font-inter',
+})
+
+
 
 
 function MyApp({ Component, pageProps }) {
+
 
   useEffect(() => {
     import('bootstrap/dist/js/bootstrap');
@@ -14,8 +21,13 @@ function MyApp({ Component, pageProps }) {
 
   return (
     <div className="">
-    
-      <Component {...pageProps} />
+
+
+      <main className={`${inter.variable} font-sans`}>
+        <Component {...pageProps} />
+      </main>
+
+
 
     </div>
   );

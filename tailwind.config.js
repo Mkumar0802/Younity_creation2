@@ -1,25 +1,29 @@
+// tailwind.config.js
+const { fontFamily } = require('tailwindcss/defaultTheme')
+
+
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  purge: ["./pages/**/*.{js,ts,jsx,tsx}", "./components/**/*.{js,ts,jsx,tsx}","./node_modules/flowbite/**/*.js,ts,jsx,tsx" ],
+  // purge: ["./pages/**/*.{js,ts,jsx,tsx}", "./components/**/*.{js,ts,jsx,tsx}"],
   content: [
     "./app/**/*.{js,ts,jsx,tsx}",
     "./pages/**/*.{js,ts,jsx,tsx}",
     "./components/**/*.{js,ts,jsx,tsx}",
   ],
-  darkMode: false, 
+ 
   theme: {
     'brandy-rose': {
-      '50': '#fbf9f9', 
-      '100': '#f8f3f3', 
-      '200': '#ece0e0', 
-      '300': '#e1cece', 
-      '400': '#cba9a9', 
-      '500': '#b48484', 
-      '600': '#a27777', 
-      '700': '#876363', 
-      '800': '#6c4f4f', 
+      '50': '#fbf9f9',
+      '100': '#f8f3f3',
+      '200': '#ece0e0',
+      '300': '#e1cece',
+      '400': '#cba9a9',
+      '500': '#b48484',
+      '600': '#a27777',
+      '700': '#876363',
+      '800': '#6c4f4f',
       '900': '#584141'
-  },
+    },
 
 
     screens: {
@@ -53,21 +57,24 @@ module.exports = {
       },
     },
 
-    extend: {},
-  },
+    extend: {
+      fontFamily: {
+        sans: ['var(--font-inter)', ...fontFamily.sans],
+      },
 
-  plugins: [
-    require("flowbite/plugin")
-  ],
-  plugins: [require("daisyui")],
-  daisyui: {
-    styled: true,
-    themes: true,
-    base: true,
-    utils: true,
-    logs: true,
-    rtl: false,
-    prefix: "",
-    darkTheme: "false",
-  },
+    },
+
+
+    plugins: [require("daisyui")],
+    daisyui: {
+      styled: true,
+      themes: true,
+      base: true,
+      utils: true,
+      logs: true,
+      rtl: false,
+      prefix: "",
+      darkTheme: "false",
+    },
+  }
 }
