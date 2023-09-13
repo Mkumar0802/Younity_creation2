@@ -4,7 +4,6 @@ import { useRouter } from "next/router";
 
 import { Photoframes } from "../Data/photoData";
 
-
 function Productdesc() {
   const router = useRouter();
   const { id } = router.query; // Get the id from route parameters
