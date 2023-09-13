@@ -1,6 +1,6 @@
 // pages/index.js
 import Link from "next/link";
-import { Photoframes } from "./Data/photoData";
+import { Photoframes } from "./photoData";
 import Image from "next/image";
 
 function Home() {
