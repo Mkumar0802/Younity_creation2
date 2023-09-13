@@ -165,7 +165,7 @@ function Home() {
             <div key={product.id}>
               <Link
                 href={`/${product.id}`}
-                className="block mb-2 overflow-hidden bg-gray-100 rounded-lg shadow-lg group h-96 lg:mb-3"
+                className="block mb-2 overflow-hidden bg-gray-100/50 rounded-lg shadow-lg group h-96 lg:mb-3"
               >
                 <Image
                   src={product.imagesource}
