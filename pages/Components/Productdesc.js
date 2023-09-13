@@ -2,7 +2,8 @@ import React from "react";
 import Image from "next/image";
 import { useRouter } from "next/router";
 
-import Photoframes from "../Data/photoData";
+import { Photoframes } from "../Data/photoData";
+
 
 function Productdesc() {
   const router = useRouter();
