@@ -160,7 +160,7 @@ function Home() {
             Show more
           </a>
         </div>
-        <div className="grid gap-x-4 gap-y-6 sm:grid-cols-1 md:gap-x-6 lg:grid-cols-3 xl:grid-cols-4">
+        <div className="grid gap-x-4 gap-y-6 sm:grid-cols-1 md:grid-cols-2   md:gap-x-6 lg:grid-cols-3 xl:grid-cols-4">
           {Photoframes.map((product) => (
             <div key={product.id}>
               <Link
