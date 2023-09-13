@@ -140,4 +140,3 @@ const Photoframes = [
 ];
 
 export { Photoframes };
-export default Photoframes;
